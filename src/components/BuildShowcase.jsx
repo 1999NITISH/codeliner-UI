@@ -445,7 +445,7 @@ export default function BuildShowcase() {
       <div className="absolute bottom-1/4 right-1/4 translate-y-1/2 translate-x-1/2 w-[35vw] h-[35vw] bg-[#00b4ff]/5 rounded-full blur-[120px] pointer-events-none z-0" id="ambient-glow-right" />
 
       {/* Main Grid Content Area */}
-      <div className="relative w-full max-w-[1300px] z-10 grid grid-cols-1 lg:grid-cols-[1fr_1.65fr] gap-x-16 xl:gap-x-24 gap-y-12 items-center" id="main-grid">
+      <div className="relative w-full max-w-[1300px] z-10 grid grid-cols-1 lg:grid-cols-[1fr_1.65fr] gap-x-16 xl:gap-x-24 gap-y-12 " id="main-grid">
         
         {/* LEFT COLUMN PANEL: Pure Hero Header Text */}
         <motion.div
@@ -587,15 +587,23 @@ export default function BuildShowcase() {
               className="group flex items-center gap-2 font-mono text-[10.5px] tracking-wider text-slate-400 hover:text-white transition-colors cursor-pointer"
               id="read-all-trigger-btn"
             >
-              <span className="border-b border-sky-400 pb-0.5" id="read-underline-txt">
-                READ
-              </span>
-              <span>ALL INSIGHTS</span>
-              <ArrowRight size={13} className="text-sky-400 transform group-hover:translate-x-1 transition-transform" />
+              <a
+                href="#"
+                className="inline-flex flex-col items-start text-[#00A3FF] text-[14px] font-chivo-mono tracking-[1.8px] uppercase group"
+              >
+                <span className="inline-flex items-center gap-2 hover:gap-3 transition-all duration-300">
+                  READ ALL INSIGHTS
+                  <ArrowRight size={13} />
+                </span>
+
+                {/* Underline till R */}
+                <span className="w-[58px] h-[1px] bg-[#00A3FF] mt-1"></span>
+          </a>
             </button>
           </div>
 
         </motion.div>
+        
       </div>
 
       {/* Slide-out & modal overlay views code blocks */}
@@ -618,6 +626,8 @@ export default function BuildShowcase() {
           />
         )}
       </AnimatePresence>
+      
+      
     </div>
   );
 }

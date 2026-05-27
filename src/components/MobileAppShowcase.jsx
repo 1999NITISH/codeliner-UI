@@ -1,4 +1,5 @@
 import React from "react";
+import PaperlessCTA from "./PaperlessCTA";
 
 const features = [
   ["Customer-On Boarding", "CRM Activities"],
@@ -25,20 +26,10 @@ const FeatureItem = ({ text }) =>
 
 export default function CoreBankingShowcase() {
   return (
-    <section className="relative overflow-hidden bg-[#07111a] px-8 py-14 flex items-center justify-center min-h-[420px]">
+    <div>
+    <section className="relative overflow-hidden mt-12 px-8 py-14 flex items-center justify-center min-h-[420px]">
 
-      {/* Background watermark */}
-      {/* <div
-        aria-hidden="true"
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-transparent font-bold pointer-events-none select-none whitespace-nowrap z-0 leading-none"
-        style={{
-          fontSize: "clamp(160px, 28vw, 360px)",
-          WebkitTextStroke: "1px rgba(0,120,255,0.09)",
-          letterSpacing: "-10px",
-        }}
-      >
-        CB7
-      </div> */}
+   
 
       {/* Main grid */}
       <div className="relative z-10 w-full max-w-5xl grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
@@ -78,6 +69,12 @@ export default function CoreBankingShowcase() {
         </div>
 
       </div>
+     
     </section>
+     <div className=" flex items-center justify-center my-20">
+      
+          <PaperlessCTA bgText="CB7" />
+          </div>
+    </div>
   );
 }

@@ -30,13 +30,14 @@ const FooterShowcase = () => {
       <div className="max-w-[1440px] mx-auto px-10 lg:px-16 py-16">
 
         {/* MAIN GRID */}
-        <div className="grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-16 ">
 
           {/* LEFT LOGO */}
-          <div className="flex items-start">
-            <h1 className="text-[180px] leading-none font-semibold tracking-[-12px] bg-gradient-to-b from-[#11d8ff] to-[#004cff] bg-clip-text text-transparent">
+          <div className="flex items-start ">
+            {/* <h1 className="text-[180px] leading-none font-semibold tracking-[-12px] bg-gradient-to-b from-[#11d8ff] to-[#004cff] bg-clip-text text-transparent">
               N7
-            </h1>
+            </h1> */}
+            <img src="/n7-footer.png" width="800" />
           </div>
 
           {/* RIGHT CONTENT */}
@@ -115,7 +116,7 @@ const FooterShowcase = () => {
                         {item}
                       </span>
 
-                      <ArrowRight className="w-3.5 h-3.5 mt-1 shrink-0 transition-transform duration-300 group-hover:translate-x-1" />
+                      <ArrowRight className="w-3.5 h-3.5 mt-1 shrink-0 transition-transform duration-300 group-hover:translate-x-1 text-[#00c8ff]" />
                     </a>
                   ))}
                 </div>
@@ -138,7 +139,7 @@ const FooterShowcase = () => {
                         {item}
                       </span>
 
-                      <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+                      <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1 text-[#00c8ff]" />
                     </a>
                   ))}
                 </div>
@@ -161,7 +162,7 @@ const FooterShowcase = () => {
                         {item}
                       </span>
 
-                      <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+                      <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1 text-[#00c8ff]" />
                     </a>
                   ))}
                 </div>

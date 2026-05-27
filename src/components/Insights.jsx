@@ -40,7 +40,7 @@ const TickerItem = ({ text, blue, emoji }) => {
 
 export const Marquee = () => {
   return (
-    <div className="w-full overflow-hidden bg-white py-8 border-y border-black/5">
+    <div className="w-full overflow-hidden bg-white py-4 border-y border-black/5">
       <style>
         {`
           @keyframes marquee {

@@ -28,14 +28,18 @@ const DashboardShowcase = () => {
               <button className="bg-[#0057ff] hover:bg-[#1b6cff] transition-all duration-300 text-white text-[12px] tracking-[2px] px-10 py-4 rounded-lg shadow-[0_10px_30px_rgba(0,87,255,0.35)]">
                 REQUEST DEMO
               </button>
+                <a
+                  href="#"
+                  className="inline-flex flex-col items-start text-[#00A3FF] text-[14px] tracking-[1.8px] uppercase group font-chivo-mono"
+                >
+                  <span className="inline-flex items-center gap-2 hover:gap-3 transition-all duration-300">
+                    Learn More
+                    <ArrowRight size={13} />
+                  </span>
 
-              <a
-                href="#"
-                className="inline-flex items-center gap-2 text-[#00A3FF] text-[11px] uppercase tracking-[1.8px] hover:gap-3 transition-all duration-300"
-              >
-                Learn More
-                <ArrowRight size={13} />
-              </a>
+                  {/* Underline till R */}
+                  <span className="w-[58px] h-[1px] bg-[#00A3FF] mt-1"></span>
+                </a>
             </div>
           </div>
 

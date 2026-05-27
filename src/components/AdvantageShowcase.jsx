@@ -6,7 +6,7 @@ const AdvantageShowcase = () => {
       <div className="max-w-[1200px] mx-auto px-6 md:px-10 py-14 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10">
 
         {/* LEFT CONTENT */}
-        <div className="max-w-[520px]">
+        <div className="max-w-[6000px]">
 
           {/* Heading */}
           <h2 className="text-white text-[42px] md:text-[56px] leading-[1.08] tracking-[-2px] font-light">
@@ -16,7 +16,7 @@ const AdvantageShowcase = () => {
           </h2>
 
           {/* Description */}
-          <p className="mt-7 text-white/45 text-[14px] leading-7 max-w-[430px]">
+          <p className="mt-7 text-white/45 text-[14px] leading-7 max-w-[500px]">
             CB7 helps your financial institution improve the client
             experience, automate and optimize procedures, simplify
             banking operations

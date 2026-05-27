@@ -87,17 +87,14 @@ const CaseStudyShowcase = () => {
       <div className="relative w-full max-w-[980px]">
 
         {/* LEFT STACK CARD */}
-        <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-10 w-[160px] h-[320px] rounded-[28px] bg-[#061526] border border-[#0b2942] overflow-hidden opacity-70">
+        <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-10 w-[160px] h-[320px] rounded-[12px] bg-[#061526] border border-[#0b2942] overflow-hidden opacity-70">
           <PatternCard />
         </div>
 
-        {/* SECOND LEFT STACK */}
-        <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-[190px] h-[360px] rounded-[30px] bg-[#07172b] border border-[#0b2942] overflow-hidden opacity-90">
-          {/* <PatternCard /> */}
-        </div>
+       
 
         {/* ACTIVE CARD */}
-        <div className="relative z-20 bg-[#061321] border border-[#0d2a42] rounded-[32px] overflow-hidden flex flex-col md:flex-row min-h-[390px] shadow-[0_30px_80px_rgba(0,0,0,0.55)]">
+        <div className="relative z-20 bg-[#061321] border border-[#0d2a42] rounded-[12px] overflow-hidden flex flex-col md:flex-row min-h-[390px] shadow-[0_30px_80px_rgba(0,0,0,0.55)]">
 
           {/* LEFT IMAGE */}
           <div className="w-full md:w-[360px] h-[320px] md:h-auto">
@@ -120,9 +117,9 @@ const CaseStudyShowcase = () => {
 
               {/* Company */}
               <div className="flex items-center gap-3 mt-8">
-                <div className="w-7 h-7 rounded-full bg-[#10283e] flex items-center justify-center">
-                  <div className="w-2.5 h-2.5 rounded-full bg-[#00c8ff]" />
-                </div>
+                {/* <div className="w-7 h-7 rounded-full bg-[#10283e] flex items-center justify-center"> */}
+                  <img src="/Zoom.png" alt={study.company} width={24} />
+                {/* </div> */}
 
                 <span className="text-white/55 text-[15px]">
                   {study.company}
@@ -180,10 +177,16 @@ const CaseStudyShowcase = () => {
         {/* VIEW ALL */}
         <a
           href="/"
-          className="absolute right-0 text-[#00c8ff] text-[12px] uppercase tracking-[2px] flex items-center gap-2 hover:text-white transition-all duration-300"
+          className="absolute right-0 text-[#00c8ff] text-[12px] uppercase tracking-[2px] flex flex-col items-center  hover:text-white transition-all duration-300"
         >
+          <div className="inline-flex items-center gap-2 hover:gap-3 transition-all duration-300">
+            <span>
           VIEW ALL
+
+            </span>
           <ArrowRight className="w-3.5 h-3.5" />
+          </div>
+           <span className="w-[58px] h-[1px] bg-[#00A3FF] mr-[36px] mt-1"></span>
         </a>
       </div>
     </section>

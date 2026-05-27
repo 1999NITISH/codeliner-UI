@@ -96,7 +96,7 @@ const Solutions = () => {
               All of our solutions are tailor-made to your needs
             </h2>
 
-            <button className="mt-12 w-fit border border-white/30 text-[11px] tracking-[2px] px-8 py-3 rounded-full hover:bg-white hover:text-black transition-all duration-300">
+            <button className="btn-outline mt-10 text-[12px] tracking-[2px] px-10 py-4 rounded-lg w-2/3">
               REQUEST DEMO
             </button>
           </div>
@@ -124,10 +124,15 @@ const Solutions = () => {
                 {/* Link */}
                 <a
                   href="#"
-                  className="inline-flex items-center gap-2 text-[#00A3FF] text-[11px] tracking-[1.8px] uppercase hover:gap-3 transition-all duration-300"
+                  className="inline-flex flex-col items-start text-[#00A3FF] text-[14px] tracking-[1.8px] uppercase group font-chivo-mono"
                 >
-                  Learn More
-                  <ArrowRight size={13} />
+                  <span className="inline-flex items-center gap-2 hover:gap-3 transition-all duration-300">
+                    Learn More
+                    <ArrowRight size={13} />
+                  </span>
+
+                  {/* Underline till R */}
+                  <span className="w-[58px] h-[1.5px] bg-[#00A3FF] mt-1"></span>
                 </a>
               </div>
             ))}
