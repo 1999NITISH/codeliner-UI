@@ -23,13 +23,79 @@ const Hero = () => {
             <button className="btn-outline font-chivo-mono">CONTACT US</button>
           </div>
           
-          <div className="animate-on-scroll" style={{ animationDelay: '0.3s' }}>
-            <div className="text-[12px] text-n7-text-secondary  tracking-[1px] font-semibold mb-4">Trusted By:</div>
-            <div className="flex items-center justify-center lg:justify-start gap-8 opacity-60">
+          <div className="animate-on-scroll mt-20" style={{ animationDelay: '0.3s' }}>
+            <div className="text-[12px] text-n7-text-secondary  tracking-[1px] font-semibold ">Trusted By:</div>
+            <div className="flex items-center justify-center lg:justify-start gap-8 w-[1440px] mt-2">
               {/* Dummy logos */}
-              <span className="font-display text-xl font-bold">mambo</span>
-              <span className="font-display text-xl font-bold flex items-center gap-1"><div className="w-4 h-4 bg-white rounded-sm"></div> block</span>
-              <span className="font-display text-xl font-bold tracking-widest uppercase">Zomer</span>
+             <div className="flex items-center gap-3">
+              <img
+                src="/Shell.png"
+                alt="Logo"
+                className="h-8 w-auto object-contain"
+              />
+
+              <span className="font-display text-lg font-bold text-white">
+                SHELLS
+              </span>
+           
+            </div>
+             <div className="flex items-center gap-3">
+              <img
+                src="/smart.png"
+                alt="Logo"
+                className="h-8 w-auto object-contain"
+              />
+
+              <span className="font-display text-lg font-bold text-white">
+                SmartFinder
+              </span>
+            </div>
+             <div className="flex items-center gap-3">
+              <img
+                src="/Zoom.png"
+                alt="Logo"
+                className="h-8 w-auto object-contain"
+              />
+
+              <span className="font-display text-lg font-bold text-white">
+                Zoomerr
+              </span>
+            </div>
+             <div className="flex items-center gap-3">
+              <img
+                src="/Art.png"
+                alt="Logo"
+                className="h-8 w-auto object-contain"
+              />
+
+              <span className="font-display text-lg font-bold text-white">
+                ArtVenue
+              </span>
+            </div>
+             <div className="flex items-center gap-3">
+              <img
+                src="/kon.png"
+                alt="Logo"
+                className="h-8 w-auto object-contain"
+              />
+
+              <span className="font-display text-lg font-bold text-white">
+                kontrastr
+              </span>
+            </div>
+             <div className="flex items-center gap-3">
+              <img
+                src="/waves.png"
+                alt="Logo"
+                className="h-8 w-auto object-contain"
+              />
+
+              <span className="font-display text-lg font-bold text-white">
+                WAVESMARATHON
+              </span>
+            </div>
+
+           
             </div>
           </div>
         </div>
@@ -39,9 +105,9 @@ const Hero = () => {
           <img
             src="/hero-img.png"
             alt="Hero showcase"
-            className="w-[434px] h-[368px] object-cover rounded-[40px] shadow-[0_30px_80px_rgba(0,0,0,0.9)] right-0 absolute top-1/2 -translate-y-1/2 animate-float z-10"
+            className="w-[434px] h-[368px] object-cover rounded-[40px] shadow-[0_30px_80px_rgba(0,0,0,0.9)] right-0 absolute top-1/2 -translate-y-1/2 animate-float z-10 scale-110"
           />
-          <div className="w-[304px] bg-white/90 text-black absolute z-20 border-4 border-gray-400 rounded-[20px] left-[40px] py-[10px] px-[6px]">
+          <div className="w-[304px] bg-white/90 text-black absolute z-20 border-4 border-gray-400 rounded-[20px] -left-[20px] py-[10px] px-[6px] scale-90">
             <h2>Recent Activity</h2>
             <div className="flex items-center gap-2 flex-wrap mt-4 ">
               {["This Day", "This Week", "This Month", "6 Months"].map((item, index) => {
@@ -73,29 +139,72 @@ const Hero = () => {
             </div>
           </div>
 
-           <div className="w-[250px] bg-white/90 text-black absolute z-20 border-4 border-gray-400 rounded-[20px]  -right-[120px] -bottom-[20px]  py-[10px] px-[6px]">
-            <div className="flex items-center justify-between gap-4 mt-4 pr-4">
-              <div className="flex  gap-3">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center">
-                  <img src="/hero-peep-ico.png" alt="person" className="w-full h-full object-cover" />
-                </div>
-                <div className="flex flex-col justify-between">
+           <div className="w-[320px] bg-[#E2E6EA] text-black absolute z-20 rounded-[32px] p-5 shadow-lg -right-[120px] -bottom-[80px] scale-75">
+  
+  {/* Header: Profile, Name, and Notification */}
+  <div className="flex items-center justify-between mb-6">
+    <div className="flex items-center gap-3">
+      <div className="w-12 h-12 rounded-full overflow-hidden border border-gray-300">
+        <img 
+          src="/hero-peep-ico.png" 
+          alt="Toni Kross" 
+          className="w-full h-full object-cover" 
+        />
+      </div>
+      <div className="flex flex-col">
+        <span className="text-[16px] font-bold text-[#1A1A1A]">Toni Kross</span>
+        <span className="text-[12px] text-gray-500 font-medium">Good Morning</span>
+      </div>
+    </div>
+    <button className="p-2 bg-transparent hover:bg-gray-200/50 rounded-xl transition">
+      {/* Bell Icon SVG */}
+      <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"></path>
+      </svg>
+    </button>
+  </div>
 
-                <span className='text-[14px] font-semibold'>Tony Kross</span>
+  {/* Balance Section */}
+  <div className="mb-6">
+    <span className="text-[14px] text-gray-500 font-normal block mb-1">Total balance</span>
+    <h2 className="text-[26px] font-extrabold text-[#0D2A75] tracking-tight">
+      $42,295.00 <span className="text-[22px] font-bold">USD</span>
+    </h2>
+  </div>
 
-                <span className='text-[12px] text-gray-600'>Good Morning</span>
-                </div>
-              </div>
-              <Bell className="text-black bg-white p-1 rounded-md" size={28} />
-            </div>
-            <div>
-              <span className='text-xs font-light text-gray-600'>Total balance</span>
-              <h2 className='text-md text-[#081E69]'>$42,295.00 USD</h2>
-            </div>
-            <div>
-              
-            </div>
-          </div>
+  <hr className="border-gray-300/60 my-4" />
+
+  {/* Quick Actions Footer */}
+  <div className="grid grid-cols-3 gap-2 text-center mt-4">
+    {/* Fund Transfer */}
+    <div className="flex flex-col items-center gap-2 cursor-pointer group">
+      <div className="w-14 h-14 bg-white/60 group-hover:bg-white rounded-2xl flex items-center justify-center shadow-sm transition">
+        {/* Fund Transfer SVG */}
+       <img src="/FundTransfer.png" alt="Fund Transfer" className="w-6 h-6" />
+      </div>
+      <span className="text-[11px] font-bold text-black">Fund Transfer</span>
+    </div>
+
+    {/* Add Money */}
+    <div className="flex flex-col items-center gap-2 cursor-pointer group">
+      <div className="w-14 h-14 bg-white/60 group-hover:bg-white rounded-2xl flex items-center justify-center shadow-sm transition">
+        {/* Add Money SVG */}
+        <img src="/AddMoney.png" alt="Add Money" className="w-6 h-6" />
+      </div>
+      <span className="text-[11px] font-bold text-black">Add Money</span>
+    </div>
+
+    {/* More */}
+    <div className="flex flex-col items-center gap-2 cursor-pointer group">
+      <div className="w-14 h-14 bg-white/60 group-hover:bg-white rounded-2xl flex items-center justify-center shadow-sm transition">
+        {/* More/Grid SVG */}
+        <img src="/More.png" alt="More Actions" className="w-6 h-6" />
+      </div>
+      <span className="text-[11px] font-bold text-black">More</span>
+    </div>
+  </div>
+
+</div>
           
         </div>
       </div>
