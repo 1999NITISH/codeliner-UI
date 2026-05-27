@@ -27,9 +27,75 @@ const Hero = () => {
             <div className="text-[12px] text-n7-text-secondary  tracking-[1px] font-semibold mb-4">Trusted By:</div>
             <div className="flex items-center justify-center lg:justify-start gap-8 opacity-60">
               {/* Dummy logos */}
-              <span className="font-display text-xl font-bold">mambo</span>
-              <span className="font-display text-xl font-bold flex items-center gap-1"><div className="w-4 h-4 bg-white rounded-sm"></div> block</span>
-              <span className="font-display text-xl font-bold tracking-widest uppercase">Zomer</span>
+             <div className="flex items-center gap-3">
+              <img
+                src="/Shell.png"
+                alt="Logo"
+                className="h-10 w-auto object-contain"
+              />
+
+              <span className="font-display text-xl font-bold text-white">
+                SHELLS
+              </span>
+           
+            </div>
+             <div className="flex items-center gap-3">
+              <img
+                src="/smart.png"
+                alt="Logo"
+                className="h-10 w-auto object-contain"
+              />
+
+              <span className="font-display text-xl font-bold text-white">
+                SmartFinder
+              </span>
+            </div>
+             <div className="flex items-center gap-3">
+              <img
+                src="/Zoom.png"
+                alt="Logo"
+                className="h-10 w-auto object-contain"
+              />
+
+              <span className="font-display text-xl font-bold text-white">
+                Zoomerr
+              </span>
+            </div>
+             <div className="flex items-center gap-3">
+              <img
+                src="/Art.png"
+                alt="Logo"
+                className="h-10 w-auto object-contain"
+              />
+
+              <span className="font-display text-xl font-bold text-white">
+                ArtVenue
+              </span>
+            </div>
+             <div className="flex items-center gap-3">
+              <img
+                src="/kon.png"
+                alt="Logo"
+                className="h-10 w-auto object-contain"
+              />
+
+              <span className="font-display text-xl font-bold text-white">
+                kontrastr
+              </span>
+            </div>
+             <div className="flex items-center gap-3">
+              <img
+                src="/waves.png"
+                alt="Logo"
+                className="h-10 w-auto object-contain"
+              />
+
+              <span className="font-display text-xl font-bold text-white">
+                WAVESMARATHON
+              </span>
+            </div>
+
+           
             </div>
           </div>
         </div>

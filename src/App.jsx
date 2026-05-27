@@ -5,7 +5,12 @@ import Solutions from './components/Solutions';
 import DashboardShowcase from './components/DashboardShowcase';
 import MobileAppShowcase from './components/MobileAppShowcase';
 import Insights from './components/Insights';
+import DigitalShowcase from './components/DigitalShowcase';
 import Footer from './components/Footer';
+import BuildShowcase from './components/BuildShowcase';
+import CaseStudyShowcase from './components/CaseStudyShowcase';
+import AdvantageShowcase from './components/AdvantageShowcase';
+import NewShowcase from './components/NewShowcase';
 
 function App() {
   useEffect(() => {
@@ -36,9 +41,15 @@ function App() {
         <Solutions />
         <DashboardShowcase />
         <MobileAppShowcase />
-        <Insights />
+        <DigitalShowcase/>
+        {/* <Insights /> */}
+        <BuildShowcase />
+        <CaseStudyShowcase/>
+        <AdvantageShowcase/>
+        <NewShowcase/>
+        
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

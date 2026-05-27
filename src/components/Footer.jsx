@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 max-w-7xl">
         
         {/* CTA Section */}
-        <div className="relative overflow-hidden bg-gradient-to-b from-white/[0.03] to-white/[0.01] border border-white/5 rounded-[32px] p-12 lg:p-20 flex flex-col lg:flex-row justify-between items-center mb-24 animate-on-scroll">
+        {/* <div className="relative overflow-hidden bg-gradient-to-b from-white/[0.03] to-white/[0.01] border border-white/5 rounded-[32px] p-12 lg:p-20 flex flex-col lg:flex-row justify-between items-center mb-24 animate-on-scroll">
            <div className="absolute top-1/2 -translate-y-1/2 left-[10%] text-[200px] lg:text-[300px] font-extrabold font-display text-white/[0.015] pointer-events-none select-none z-0">CB7</div>
            <div className="relative z-10 text-center lg:text-left mb-10 lg:mb-0">
              <h2 className="text-[36px] lg:text-[48px] max-w-[550px] leading-tight tracking-[-1px] mb-4">Take the full advantage of going paper-less now.</h2>
@@ -19,7 +19,7 @@ const Footer = () => {
               <button className="btn-outline">CONTACT US</button>
               <button className="btn-primary">REQUEST DEMO</button>
            </div>
-        </div>
+        </div> */}
 
         {/* Links Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-16 border-b border-white/[0.08] animate-on-scroll" style={{ animationDelay: '0.2s' }}>
