@@ -50,7 +50,7 @@ const DashboardShowcase = () => {
               
               {/* Placeholder for Image */}
               {/* Right Side */}
-<div className="relative flex justify-end">
+<div className="relative flex justify-center lg:justify-end mt-10 lg:mt-0 lg:h-[200px]">
   {/* Dashboard Frame */}
   
     
@@ -58,7 +58,7 @@ const DashboardShowcase = () => {
     <img
       src="/macbook.png"
       alt="Macbook Dashboard"
-      className="w-[757px] h-[490px] object-cover absolute -top-[280px] left-[316px] bottom-0"
+      className="w-full max-w-[757px] h-auto lg:h-[490px] object-cover lg:absolute lg:-top-[280px] lg:left-[150px] xl:left-[316px] lg:bottom-0"
     />
 
     {/* Bottom Line */}

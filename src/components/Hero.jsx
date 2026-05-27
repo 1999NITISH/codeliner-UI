@@ -3,7 +3,7 @@ import { Download, CreditCard, ChevronRight, ArrowUpRight, Bell } from 'lucide-r
 
 const Hero = () => {
   return (
-    <section className="pt-[160px] pb-[100px]  overflow-hidden">
+    <section className="pt-[120px] lg:pt-[160px] pb-[60px] lg:pb-[100px] overflow-hidden">
       {/* Background Glow */}
       <div className="absolute top-[10%] right-[0%] w-[700px] h-[700px] bg-[radial-gradient(circle,rgba(0,102,255,0.8)_40%,rgba(0,102,255,0.05)_20%,rgba(0,0,0,0)_0%)] blur-[60px] z-0 rounded-full"></div>
       
@@ -11,21 +11,21 @@ const Hero = () => {
         
         {/* Left Content */}
         <div className="flex-1 max-w-[650px] mb-20 lg:mb-0 text-center lg:text-left">
-          <h1 className="text-[56px] lg:text-[72px] mb-6 tracking-[-2px] animate-on-scroll leading-[1.15] font-display font-semibold">
+          <h1 className="text-[40px] md:text-[56px] lg:text-[72px] mb-6 tracking-[-1px] md:tracking-[-2px] animate-on-scroll leading-[1.15] font-display font-semibold">
             The new foundation of modern banking
           </h1>
           <p className="text-[18px] lg:text-[20px] text-n7-text-secondary mb-12 leading-[1.6] max-w-[550px] mx-auto lg:mx-0 animate-on-scroll" style={{ animationDelay: '0.1s' }}>
             We drive innovation and growth, provide seamless customer experience and operational excellence
           </p>
           
-          <div className="flex justify-center lg:justify-start gap-5 mb-16 animate-on-scroll" style={{ animationDelay: '0.2s' }}>
+          <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-3 sm:gap-5 mb-16 px-4 sm:px-0 animate-on-scroll" style={{ animationDelay: '0.2s' }}>
             <button className="btn-primary font-chivo-mono">REQUEST DEMO</button>
             <button className="btn-outline font-chivo-mono">CONTACT US</button>
           </div>
           
           <div className="animate-on-scroll mt-20" style={{ animationDelay: '0.3s' }}>
             <div className="text-[12px] text-n7-text-secondary  tracking-[1px] font-semibold ">Trusted By:</div>
-            <div className="flex items-center justify-center lg:justify-start gap-8 w-[1440px] mt-2">
+            <div className="flex items-center justify-center lg:justify-start gap-4 md:gap-8 w-full flex-wrap mt-4">
               {/* Dummy logos */}
              <div className="flex items-center gap-3">
               <img
@@ -101,13 +101,13 @@ const Hero = () => {
         </div>
 
         {/* Right Content / Mockups */}
-        <div className="w-full   h-full relative flex-1 animate-on-scroll bg-blue-400" style={{ animationDelay: '0.4s' }}>
+        <div className="w-full min-h-[400px] lg:h-[600px] relative flex-1 animate-on-scroll flex items-center justify-center lg:justify-end mt-10 lg:mt-0" style={{ animationDelay: '0.4s' }}>
           <img
             src="/hero-img.png"
             alt="Hero showcase"
-            className="w-[434px] h-[368px] object-cover rounded-[40px] shadow-[0_30px_80px_rgba(0,0,0,0.9)] right-0 absolute top-1/2 -translate-y-1/2 animate-float z-10 scale-110"
+            className="w-[280px] sm:w-[350px] lg:w-[434px] h-[240px] sm:h-[300px] lg:h-[368px] object-cover rounded-[20px] lg:rounded-[40px] shadow-[0_30px_80px_rgba(0,0,0,0.9)] lg:right-0 absolute top-1/2 -translate-y-1/2 animate-float z-10 scale-100 lg:scale-110"
           />
-          <div className="w-[304px] bg-white/90 text-black absolute z-20 border-4 border-gray-400 rounded-[20px] -left-[20px] py-[10px] px-[6px] scale-90">
+          <div className="w-[240px] sm:w-[280px] lg:w-[304px] bg-white/90 text-black absolute z-20 border-2 lg:border-4 border-gray-400 rounded-[15px] lg:rounded-[20px] left-0 sm:left-[5%] lg:-left-[20px] py-[10px] px-[6px] top-[10%] lg:top-[20%] scale-75 sm:scale-90">
             <h2>Recent Activity</h2>
             <div className="flex items-center gap-2 flex-wrap mt-4 ">
               {["This Day", "This Week", "This Month", "6 Months"].map((item, index) => {
@@ -139,7 +139,7 @@ const Hero = () => {
             </div>
           </div>
 
-           <div className="w-[320px] bg-[#E2E6EA] text-black absolute z-20 rounded-[32px] p-5 shadow-lg -right-[120px] -bottom-[80px] scale-75">
+           <div className="w-[280px] sm:w-[320px] bg-[#E2E6EA] text-black absolute z-20 rounded-[24px] sm:rounded-[32px] p-4 sm:p-5 shadow-lg -right-[10px] sm:-right-[40px] lg:-right-[120px] -bottom-[10px] sm:-bottom-[40px] lg:-bottom-[80px] scale-65 sm:scale-75">
   
   {/* Header: Profile, Name, and Notification */}
   <div className="flex items-center justify-between mb-6">

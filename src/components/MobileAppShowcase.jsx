@@ -35,18 +35,18 @@ export default function CoreBankingShowcase() {
       <div className="relative z-10 w-full max-w-5xl grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
         {/* LEFT — Laptop frame */}
-        <div className="relative">
-          <div className="w-full  absolute -top-[200px] right-[355px] scale-125">
-            <div className=" ">
+        <div className="relative flex justify-center order-last lg:order-first mt-10 lg:mt-0 lg:h-auto min-h-[250px]">
+          <div className="w-full lg:absolute lg:-top-[200px] lg:right-[150px] xl:right-[355px] lg:scale-125 flex justify-center lg:block">
+            <div className="w-full max-w-[651px]">
               {/* Title bar */}
              
 
-              <img src="/data.png" className="w-[651px] h-[320px] object-cover block" /> 
+              <img src="/data.png" className="w-full h-auto lg:h-[320px] object-cover block rounded-lg lg:rounded-none" /> 
               
             </div>
 
             {/* Laptop base */}
-            <div className="h-4 border-t border-[#0f3d60] rounded-b-md" />
+            <div className="h-4 border-t border-[#0f3d60] rounded-b-md hidden lg:block" />
           </div>
         </div>
 

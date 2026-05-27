@@ -137,7 +137,7 @@ const CaseStudyShowcase = () => {
       </div>
 
       {/* Controls */}
-      <div className="w-full max-w-[980px] mt-10 relative flex items-center justify-center">
+      <div className="w-full max-w-[980px] mt-10 relative flex flex-col md:flex-row items-center justify-center gap-8 md:gap-0">
 
         {/* Center Controls */}
         <div className="flex items-center gap-5">
@@ -177,7 +177,7 @@ const CaseStudyShowcase = () => {
         {/* VIEW ALL */}
         <a
           href="/"
-          className="absolute right-0 text-[#00c8ff] text-[12px] uppercase tracking-[2px] flex flex-col items-center  hover:text-white transition-all duration-300"
+          className="relative md:absolute md:right-0 text-[#00c8ff] text-[12px] uppercase tracking-[2px] flex flex-col items-center hover:text-white transition-all duration-300"
         >
           <div className="inline-flex items-center gap-2 hover:gap-3 transition-all duration-300">
             <span>
@@ -186,7 +186,7 @@ const CaseStudyShowcase = () => {
             </span>
           <ArrowRight className="w-3.5 h-3.5" />
           </div>
-           <span className="w-[58px] h-[1px] bg-[#00A3FF] mr-[36px] mt-1"></span>
+           <span className="w-[58px] h-[1px] bg-[#00A3FF] md:mr-[36px] mt-1"></span>
         </a>
       </div>
     </section>
