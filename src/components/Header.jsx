@@ -3,7 +3,7 @@ import { ChevronDown, Globe } from 'lucide-react';
 
 const Header = () => {
   return (
-    <header className="absolute top-0 left-0 right-0 z-[100]   mx-56 rounded-lg mt-4 bg-[#2F2F2FB2]">
+    <header className="absolute top-0 left-0 right-0 z-[100] mx-4 md:mx-8 lg:mx-20 xl:mx-56 rounded-lg mt-4 bg-[#2F2F2FB2]">
       <div className="container mx-auto px-6 max-w-7xl flex items-center justify-between">
         <div className="font-display text-[28px] font-extrabold tracking-[-1px]">N7</div>
         
@@ -13,7 +13,7 @@ const Header = () => {
           <a href="#" className="text-[13px] font-[400px] tracking-[0.5px] uppercase text-white hover:text-white transition-colors">About Us</a>
         </nav>
         
-          <button className="btn-outline font-chivo-mono">REQUEST DEMO</button>
+          <button className="btn-outline font-chivo-mono text-xs sm:text-sm px-3 py-1.5 sm:px-6 sm:py-2">REQUEST DEMO</button>
       </div>
     </header>
   );
